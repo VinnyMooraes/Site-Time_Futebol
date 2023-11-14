@@ -1,0 +1,244 @@
+@charset "UTF-8";   /*configurando caracteres especiais*/
+@font-face {    /*importando fontes externas*/
+    font-family: 'Bree_Serif';
+    src: url(Fontes/Bree_Serif/BreeSerif-Regular.ttf) format('woff2');
+}
+*{                  /*config. GLOBAIS*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /*border: 01px solid black;*/
+}
+/*#fig_menus{
+    width: 450px;
+}*/
+p{  /*config. global*/
+    font-family: Arial, Helvetica, sans-serif;
+}img{
+    max-width: 100%;
+    height: auto;
+}
+/*config.container principal - primeiro menu*/
+header .container{    
+    display: flex;      
+    align-items: center;        /*alinhamento vertical*/
+    background-color: brown;
+    padding: 30px;  /* espaçamento interno - container */
+    color: aliceblue;
+    font-family: 'Bree_Serif',sans-serif;
+    font-weight: normal;    /*peso da fonte*/
+    justify-content: space-between;
+}
+header .container h1{
+    font-size: 40px;
+}
+header .container li{
+    display: inline-block;
+    padding-right: 8px;
+    cursor: pointer;
+}
+header .container a{
+    text-decoration: none;
+    color: aliceblue;
+}
+/*config - segundo_menu*/
+.container_menu_secundario_page_principal{
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+}
+.container_menu_secundario_page_principal li{
+    display: inline;
+    padding: 10px 60px;
+    font-weight: bolder;
+    border-left: 01px solid aliceblue;
+    border-right: 01px solid aliceblue;
+}
+.container_menu_secundario_page_principal a{
+    text-decoration: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container_menu_secundario_page_principal a:hover{
+    color: red;
+    /*text-decoration: underline;*/
+}
+/*config. sessão estadios*/
+#estadios{
+    
+}
+#estadios .articles{
+    display: flex; /*conf. o menu para ter n itens na mesma div*/
+    justify-content: space-between; /*espaçamento entre as divs/articles*/
+    /*flex-wrap: wrap;*/
+    padding: 10px;
+}
+#estadios .container{
+    background-color: rgba(0, 0, 0, 0.06);
+}
+#estadios .container img{
+    border: 0.5px solid rgba(0, 0, 0, 0.26);
+    box-shadow: 1px solid #2f3640;
+}
+#estadios .articles article{
+    /*justify-content: space-between;*/
+    width: 30%; /*definindo largura dos artigos*/
+    padding: 5px 5px 5px 5px;
+}
+#estadios .container > h2{
+    color: brown;
+    font-family: 'Bree_Serif',sans-serif;
+    font-weight: normal;
+    padding: 5px;
+    font-size: 30px;
+}
+.container .articles article h2{
+    font-family: 'Bree_Serif',sans-serif;
+    font-weight: normal;
+    padding: 10px 0;
+}
+/*config. sessão fotos*/
+#fotos .container{
+    background-color: brown;
+}
+/*#fotos .container .articles{
+    display: flex;
+}*/
+#fotos .container h2{
+    color: #fff;
+    font-family: 'Bree_Serif',sans-serif;
+    font-weight: normal;
+    padding: 5px;
+    font-size: 30px;
+}
+#fotos .articles{
+    display: flex;
+    justify-content: space-between;
+    
+}
+#fotos .articles article{
+    width: 50%;
+    padding: 10px;
+    border: 0.1px solid #fff;
+    border-radius: 5px;
+    margin: 10px;   
+}
+time{
+    color: black;
+    font-weight: bold;
+}
+#fotos .articles article h3{
+    color: #fff;
+    font-family: 'Bree_Serif',sans-serif;
+    font-weight: normal;
+}
+#fotos .articles article p{
+    color: #fff;
+}
+#fotos .articles article img{
+    width: 500px; 
+}
+/*config. sessão jogos*/
+#container_calendario_de_jogos .container_principal{
+    background-color: black;
+    
+}
+#container_calendario_de_jogos .container_principal h2{
+    font-family: 'Bree_Serif',sans-serif;
+    color: aliceblue;
+    font-weight: normal;
+    padding: 05px;
+    font-size: 30px;
+}
+#container_calendario_de_jogos .container_principal h3{
+    color: aliceblue;
+    background-color: brown;
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 05px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#tipo_partida{ /*estilizando peso de fonte - tipo do campeonato (campeonato:brasileiro/juvenil/estadual)*/
+    font-weight: bolder;
+    padding-top: 10px;
+}
+#container_time_x_time{
+    padding-left: 160px;
+    padding-top: 30px;
+}
+#container_proximos_jogos #times_partida{
+    background-color: brown;
+    border-radius: 05px;
+    padding: 5px;
+    color:aliceblue;
+    display: inline-block;
+    margin: 10px;    
+}
+#container_calendario_de_jogos .container_principal .articles{
+    display: flex;
+}
+#container_calendario_de_jogos .articles article{
+    display: block;
+    width: 40%;
+    height: 300px;
+}
+#container_proximos_jogos, 
+#container_classificacoes{
+    background-color: aliceblue;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 05px;
+}
+#table_classificacoes th, td{
+    padding: 05px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#table_classificacoes th{
+    background-color: brown;
+    color: aliceblue;
+}
+#tipo_classificacao_campeonato{ /*estilizando peso de fonte - tipo do campeonato (campeonato:brasileiro/juvenil/estadual)*/
+    font-weight: bolder;
+    padding-top: 10px;
+}
+/*config. sessão - cadastro de associados*/
+#cadastro_associados .articles{
+    display: block;
+    padding: 20px;
+    margin: 20px;
+    width: 750px;
+    height: 350px;
+    border: 05px solid brown;
+    border-radius: 05px;
+    font-family: 'Bree_Serif',sans-serif;
+}
+#cadastro_associados .container h2{
+    color: brown;
+    font-family: 'Bree_Serif',sans-serif;
+    font-weight: normal;
+    padding: 5px;
+    font-size: 30px;
+}
+#cadastro_associados .container .articles img{
+    float: right;
+}
+form input, form button{
+    display: block;
+    width: 500px;
+    margin-bottom: 8px;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+input:focus{
+    outline-color: brown;
+}
+/*config. rodapé*/
+footer{
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    padding: 05px;
+}
